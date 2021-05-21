@@ -73,6 +73,7 @@ email: mail@example.com''',
 ```
 
 ### Customized
+
 You can customize link pattern.
 
 ```dart
@@ -110,7 +111,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final blueStyle = TextStyle(color: Colors.blueAccent);
     final highlightedStyle = TextStyle(
-        color: Colors.blueAccent, 
+        color: Colors.blueAccent,
         backgroundColor: Colors.blueAccent.withAlpha(0x33),
     );
     final pinkStyle = TextStyle(color: Colors.pink);
@@ -166,3 +167,7 @@ This text is normal
   }
 }
 ```
+
+## Known Issues
+
+`onTap` is called twice when using Flutter 1.18.0-11.1.pre (beta channel).
